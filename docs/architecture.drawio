@@ -1,0 +1,54 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="hT-6P2xBjzHvelPhZcTU">
+    <mxGraphModel dx="1414" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="430" pageHeight="300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Nxo7cznit1PW4uO8oLjr-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;align=center;verticalAlign=top;" value="Isolated Network - Host-only" vertex="1">
+          <mxGeometry height="460" width="760" x="40" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Nxo7cznit1PW4uO8oLjr-8" edge="1" parent="1" source="Nxo7cznit1PW4uO8oLjr-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=11;strokeColor=light-dark(#000000,#3399FF);" target="Nxo7cznit1PW4uO8oLjr-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nxo7cznit1PW4uO8oLjr-9" connectable="0" parent="Nxo7cznit1PW4uO8oLjr-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontStyle=1" value="LOGS / Telemetry&amp;nbsp;&lt;div&gt;(Sysmon + Wazuh agent)&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.1292" y="3" as="geometry">
+            <mxPoint x="-38" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nxo7cznit1PW4uO8oLjr-2" parent="1" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/VirtualMachineWindows.svg;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;" value="Windows Endpoint&lt;div&gt;Win10 + Sysmon — X.X.X.X&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="130.43" x="330" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="Nxo7cznit1PW4uO8oLjr-6" edge="1" parent="1" source="Nxo7cznit1PW4uO8oLjr-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=light-dark(#000000,#FF0000);labelBackgroundColor=light-dark(#FFFFFF,transparent);fontSize=17;startSize=17;endSize=7;strokeWidth=10;strokeColor=light-dark(#000000,#FF0000);" target="Nxo7cznit1PW4uO8oLjr-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="270" y="390" />
+              <mxPoint x="270" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nxo7cznit1PW4uO8oLjr-7" connectable="0" parent="Nxo7cznit1PW4uO8oLjr-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontColor=light-dark(#000000,#FFFFFF);fontSize=13;fontStyle=1;labelBorderColor=none;" value="Attack" vertex="1">
+          <mxGeometry relative="1" x="-0.4514" y="-1" as="geometry">
+            <mxPoint x="5" y="-21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nxo7cznit1PW4uO8oLjr-4" parent="1" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/VM_Linux.svg;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;" value="Kali Attacker -&amp;nbsp;X.X.X.X" vertex="1">
+          <mxGeometry height="120" width="130.43" x="80" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="Nxo7cznit1PW4uO8oLjr-5" parent="1" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/generic_server.svg;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;" value="Wazuh SIEM&lt;div&gt;Ubuntu — 192.168.56.10&lt;/div&gt;" vertex="1">
+          <mxGeometry height="125" width="70" x="650" y="327.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Nxo7cznit1PW4uO8oLjr-10" parent="1" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;fillColor=#FF6A00;strokeColor=none;shape=mxgraph.alibaba_cloud.user;fontSize=14;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;" value="SOC Analyst" vertex="1">
+          <mxGeometry height="70" width="70" x="580" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Nxo7cznit1PW4uO8oLjr-14" edge="1" parent="1" source="Nxo7cznit1PW4uO8oLjr-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.007;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" target="Nxo7cznit1PW4uO8oLjr-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nxo7cznit1PW4uO8oLjr-15" connectable="0" parent="Nxo7cznit1PW4uO8oLjr-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Dashboard / Alert" vertex="1">
+          <mxGeometry relative="1" x="-0.2394" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
