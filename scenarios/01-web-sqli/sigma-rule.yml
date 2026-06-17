@@ -1,0 +1,41 @@
+title: Possible SQL Injection Attempt in Web Request URL
+id: 7b1f3c2e-4a6d-4e8b-9c1a-0f2d5e6a8b3c
+status: experimental
+description: >
+  Detects possible SQL injection attempts by matching common SQLi markers
+  (single quotes, SQL keywords, comment sequences, tautologies) in the
+  query string of HTTP requests recorded in web server access logs.
+  Modeled on a DVWA SQL injection scenario in a SOC home lab.
+author: Valerio Porcile
+date: 2026/06/17
+references:
+  - https://attack.mitre.org/techniques/T1190/
+  - https://github.com/digininja/DVWA
+logsource:
+  category: webserver
+detection:
+  selection:
+    cs-uri-query|contains:
+      - "'"
+      - "%27"
+      - " OR "
+      - " UNION "
+      - " SELECT "
+      - "--"
+      - "1=1"
+      - "%3D"
+  condition: selection
+fields:
+  - c-ip
+  - cs-uri-stem
+  - cs-uri-query
+  - cs-user-agent
+falsepositives:
+  - Legitimate requests whose parameters naturally contain an equals sign,
+    double dash, or the word OR/SELECT (e.g. search queries, free-text input).
+    The rule is intentionally broad as a first iteration and should be tuned
+    (e.g. require a quote AND a SQL keyword together) to reduce noise.
+level: high
+tags:
+  - attack.initial_access
+  - attack.t1190

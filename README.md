@@ -51,7 +51,8 @@ soc-home-lab/
 
 | #  | Scenario | MITRE Technique | Status |
 |----|----------|-----------------|--------|
-| 01 | [Empty Scenario](./scenarios/empty-scenario/) | TXXXX — Empty scenario test | 📋 |
+| 01 | [SQLi WebApp](./scenarios/01-web-sqli/README.md) | T1190  — Web Application SQL Injection | ✅ |
+| 02 | [Credential dumping](./scenarios/02-credential-dumping/README.md) | T1003.001  — Credential dumping (Mimikatz) | 📋 |
 
 ---
 

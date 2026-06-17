@@ -11,17 +11,17 @@ This project is a self-contained SOC home lab built to practice blue-team detect
 ## Machines
 
 
-| Hostname        | Role              | OS               | IP             | Resources        |
-|-----------------|-------------------|------------------|----------------|------------------|
-| wazuh-siem      | SIEM / Manager    | Ubuntu Server    | X.X.X.X        | 4 vCPU / 8 GB RAM |
-| win-endpoint    | Victim / Endpoint | Windows 10/11    | X.X.X.X        | 2 vCPU / 4 GB RAM |
-| kali-attacker   | Attacker          | Kali Linux       | X.X.X.X        | 2 vCPU / 4 GB RAM |
+| Hostname        | Role              | OS               | IP             | Resources         |
+|-----------------|-------------------|------------------|----------------|-------------------|
+| wazuh-siem      | SIEM / Manager    | Ubuntu Server    | 192.168.56.10  | 4 vCPU / 8 GB RAM |
+| win-endpoint    | Victim / Endpoint | Windows 10/11    | 192.168.56.20  | 2 vCPU / 4 GB RAM |
+| kali-attacker   | Attacker          | Kali Linux       | 192.168.56.30  | 2 vCPU / 4 GB RAM |
 
 ---
 
 ## Network Design
 
-The lab runs on an isolated host-only network (X.X.X.X ). All three VMs can communicate with each other, but the network has no route to the host's LAN or to internet. This isolation is a security choice: it contains any malicious activity inside the lab, preventing it to reach real systems.  The main trade-off is that scenarios relying on outbound connectivity (real C2 channels, remote payload staging, DNS-based exfiltration) can only be approximated locally; for the current detection-focused scope this is an acceptable limitation.
+The lab runs on an isolated host-only network (192.168.56.0/24). All three VMs can communicate with each other, but the network has no route to the host's LAN or to internet. This isolation is a security choice: it contains any malicious activity inside the lab, preventing it to reach real systems.  The main trade-off is that scenarios relying on outbound connectivity (real C2 channels, remote payload staging, DNS-based exfiltration) can only be approximated locally; for the current detection-focused scope this is an acceptable limitation.
 
 ---
 
