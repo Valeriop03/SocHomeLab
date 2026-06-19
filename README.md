@@ -52,7 +52,9 @@ soc-home-lab/
 | #  | Scenario | MITRE Technique | Status |
 |----|----------|-----------------|--------|
 | 01 | [SQLi WebApp](./scenarios/01-web-sqli/README.md) | T1190  — Web Application SQL Injection | ✅ |
-| 02 | [Credential dumping](./scenarios/02-credential-dumping/README.md) | T1003.001  — Credential dumping (Mimikatz) | 📋 |
+| 02 | [Credential dumping](./scenarios/02-credential-dumping/README.md) | T1003.001  — Credential dumping (Mimikatz) | ✅ |
+| 03 | [Persistance](./scenarios/03-persistance/README.md) | T1053 / T1547  — Persistance - Scheduled Task or Registry Run Key | 📋 |
+| 04 | [Discovery](./scenarios/04-discovery/README.md) | T1057, T1082  — Discovery / Recon | 📋 |
 
 ---
 
